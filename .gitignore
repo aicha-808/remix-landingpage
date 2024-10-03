@@ -1,5 +1,28 @@
-node_modules
+# Node modules
+node_modules/
 
-/.cache
-/build
+# Fichiers de build
+build/
+dist/
+
+# Fichiers de logs
+*.log
+
+# Fichiers d'environnement
 .env
+
+# Cache
+.cache/
+.next/
+
+# Fichiers de dépendances locales
+.pnp.js
+.pnp/
+
+# Dossier des coverage (tests)
+coverage/
+
+# Fichiers système ou d'éditeurs
+.DS_Store
+.vscode/
+.idea/
