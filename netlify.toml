@@ -1,0 +1,9 @@
+[build]
+  publish = "public/build"  # Répertoire généré après build pour Remix
+  command = "npm run build"
+
+[functions]
+  directory = "netlify/functions"  # Fonction SSR ou API serverless
+
+[[plugins]]
+  package = "@netlify/remix-plugin"

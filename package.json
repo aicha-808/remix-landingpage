@@ -4,15 +4,13 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "remix vite:build ",
-    "dev": "remix vite:dev",
-    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
-  },
+"scripts": {
+  "build": "set NODE_ENV=production remix vite:build",
+  "dev": "remix vite:dev",
+  "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+  "start": "NODE_ENV=production remix-serve ./build/server/index.js",
+  "typecheck": "tsc"
+},
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@heroicons/react": "^2.1.4",
